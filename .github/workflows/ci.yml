@@ -1,0 +1,36 @@
+name: Foundation CI
+
+on:
+  pull_request:  # Runs when PRs targeting main are opened or updated
+    branches: [main]
+  push:                 # Runs after changes reach main
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  foundation-tests:
+    name: Foundation tests
+    runs-on: ubuntu-latest  # Tests on a fresh Linux environment
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python. # Selects Python 3.12
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt   #Installs the recorded dependencies
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Check dependency compatibility
+        run: python -m pip check
+
+      - name: Run automated tests  #. Runs the tests; failures make the job fail
+        run: python -m pytest tests/ -v

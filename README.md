@@ -44,25 +44,29 @@ customer impact.
 
 ## Current status
 
-Completed:
-- Local project folder created.
-- Python 3.12 virtual environment created and verified.
-- Git repository initialised.
-- Git ignore rules verified.
+## Current status
 
-Application development, testing, and CI/CD are not yet implemented.
+Implemented and verified locally:
+- FastAPI application.
+- GET /health endpoint.
+- Portal landing page.
+- Two automated foundation tests passing.
+
+Project overview, requirements, acceptance criteria, and draft
+test strategy are documented.
+
+Authentication, PDF retrieval, AI answers, database integration,
+deployment, and CI/CD are not yet implemented.
 
 ## Data
 
 UAI is fictional. Policy documents are original demonstration
 materials, not official university guidance.
 
-Use synthetic users and booking data.
+## Project documentation
 
-## Local environment
+- [Test strategy](docs/test-strategy.md)
+- [Foundation test results](docs/foundation-test-results.md)
 
-Python: 3.12
-
-Activate the virtual environment on macOS:
-
-    source .venv/bin/activate
+- [Project overview](docs/project-overview.md)
+- [Requirements and acceptance criteria](docs/requirements.md)
