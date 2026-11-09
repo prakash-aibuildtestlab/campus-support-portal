@@ -67,6 +67,8 @@ materials, not official university guidance.
 
 - [Test strategy](docs/test-strategy.md)
 - [Foundation test results](docs/foundation-test-results.md)
+- [Chunking design](docs/chunking-design.md)
+- [Chunking test results](docs/chunking-test-results.md)
 
 - [Project overview](docs/project-overview.md)
 - [Requirements and acceptance criteria](docs/requirements.md)
