@@ -70,3 +70,6 @@ materials, not official university guidance.
 
 - [Project overview](docs/project-overview.md)
 - [Requirements and acceptance criteria](docs/requirements.md)
+
+- [Policy ingestion test plan](docs/policy-ingestion-test-plan.md)
+- [Policy ingestion test results](docs/policy-ingestion-test-results.md)
